@@ -1,0 +1,5 @@
+-m
+checkpoints/llama-3.2-3b-instruct.gguf
+--server
+--n_thread
+4

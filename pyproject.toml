@@ -8,7 +8,8 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "huggingface-hub (>=0.35.0,<0.36.0)"
+    "huggingface-hub (>=0.35.0,<0.36.0)",
+    "langchain-openai (>=0.3.33,<0.4.0)"
 ]
 
 
