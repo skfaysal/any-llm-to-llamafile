@@ -31,7 +31,6 @@ brew install llama.cpp
 ```
 
 ```bash
-```bash
 llama-serve \
   --model ./checkpoints/llama-3.2-3b-instruct.gguf \
   --ctx_size 128000 \
