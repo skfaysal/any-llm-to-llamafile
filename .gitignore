@@ -215,4 +215,4 @@ __marimo__/
 *.llamafile
 *.cache
 *.Models
-
+*.model

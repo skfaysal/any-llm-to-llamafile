@@ -31,7 +31,7 @@ brew install llama.cpp
 ```
 
 ```bash
-llama-serve \
+llama-server \
   --model ./checkpoints/llama-3.2-3b-instruct.gguf \
   --ctx_size 128000 \
   --port 8000 \
@@ -40,8 +40,20 @@ llama-serve \
 ## Server
 #It will open a chat ui in `http://127.0.0.1:8000/`
 ```
+### Run multi-modal models
 
-### Python usage
+```bash
+# download the model using `download_model_hf.py`
+# convert the model to gguf using he command above.
+# now create a `mmproj` file using the flag `--mmproj` like:
+python3 llama.cpp/convert_hf_to_gguf.py models/gemma-3-4b-it \
+  --outfile checkpoints/gemma-3-4b-it.gguf \
+  --outtype f16
+
+# Now run the `llama-server` command.
+```
+
+## Python usage
 ```bash
 python3 test_python_api.py
 ```
